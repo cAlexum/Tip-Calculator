@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <header>Tip Calculator</header>
+    </body>
+    <main>
+        <div class="input-form">
+            <input type="number" id="numberInput" placeholder="Input spent sum.">
+            <input type="range" id="percentage" min="0" max="100" step="0.1" value="15" oninput="displaySlider()">
+            <input type="text" id="percentageValue" placeholder="" onchange="displayToSlider()"></span>
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <div class="result">
+            <p id="resultBox">Result will show up here.</p>
+        </div>
+        <script src="app.js"></script>
+    </main>
